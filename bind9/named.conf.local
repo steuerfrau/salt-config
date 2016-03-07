@@ -1,0 +1,25 @@
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+
+zone "hoppetosse.loc" {
+        type master;
+        file "/etc/bind/db.hoppetosse.loc";
+        //forwarders {};
+        // If we do not comment the ''forwarders'' "empty" clients of the local subnet in my case don't have access to the upstream DNS ?
+        //allow-update { key ns-example-com_rndc-key; };
+        allow-update { key rndc-key; };
+        //confusion between the file name to import (ns-example-com_rndc-key) and the key label (rndc-key) ?
+};
+zone "110.168.192.in-addr.arpa" {
+        type master;
+        file "/etc/bind/db.hoppetosse.loc.inv";
+        //see comment below (zone "hoppetosse.loc")
+        //forwarders {};
+        //allow-update { key ns-example-com_rndc-key; };
+        allow-update { key rndc-key; };
+};

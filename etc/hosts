@@ -1,0 +1,41 @@
+127.0.0.1	localhost
+::1		localhost ip6-localhost ip6-loopback
+ff02::1		ip6-allnodes
+ff02::2		ip6-allrouters
+
+# Printers
+
+192.168.110.10  officejet.hoppetosse.loc officejet
+
+# Hosts
+
+192.168.110.30  hera.hoppetosse.loc hera
+192.168.110.31  juno.hoppetosse.loc juno
+
+# KVMs
+
+192.168.110.40  mel01testpxe01.hoppetosse.loc mel01testpxe01
+
+# Containers
+
+192.168.110.50  mel01wiki01.hoppetosse.loc mel01wiki01
+192.168.110.51  mel01dev01.hoppetosse.loc mel01dev01
+192.168.110.52  mel01deploy01.hoppetosse.loc mel01deploy01 # Puppet
+192.168.110.53  mel01tstpuppet01.hoppetosse.loc mel01tstpuppet01 
+192.168.110.54  mel01mon01.hoppetosse.loc mel01mon01 # Zabbix
+192.168.110.55  mel01deploy02.hoppetosse.loc mel01deploy02 # Salt
+192.168.110.56  mel01tstsalt01.hoppetosse.loc mel01tstsalt01 # Salt
+192.168.110.57  mel01deploy03.hoppetosse.loc mel01deploy03
+192.168.110.58  mel01misc01.hoppetosse.loc mel01misc01
+192.168.110.59  mel01repo01.hoppetosse.loc mel01repo01
+
+# Workstations
+
+192.168.110.60  tux.hoppetosse.loc tux
+192.168.110.61  m01n039.hoppetosse.loc m01n039
+192.168.110.62  m01n039-wifi.hoppetosse.loc m01n039-wifi
+
+# Misc
+
+192.168.110.80  pxetest.hoppetosse.loc pxetest
+

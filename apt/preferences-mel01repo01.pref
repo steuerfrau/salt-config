@@ -1,0 +1,4 @@
+Package: *
+Pin: origin "mel01repo01.hoppetosse.loc"
+Pin-Priority: 900
+

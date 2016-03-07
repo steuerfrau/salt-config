@@ -1,0 +1,43 @@
+@ IN SOA        mel01misc01.hoppetosse.loc. root.example.com. (
+                   2007010401           ; Serial
+                         3600           ; Refresh [1h]
+                          600           ; Retry   [10m]
+                        86400           ; Expire  [1d]
+                          600 )         ; Negative Cache TTL [1h]
+;
+@       IN      NS      mel01misc01.hoppetosse.loc.
+
+; Printers
+
+10       IN      PTR     officejet.hoppetosse.loc.
+
+; Hosts
+
+30       IN      PTR     hera.hoppetosse.loc.
+31       IN      PTR     juno.hoppetosse.loc.
+
+; KVMs
+
+40       IN      PTR      mel01testpxe01.hoppetosse.loc
+
+; Containers
+
+50       IN      PTR     mel01wiki01.hoppetosse.loc.
+51       IN      PTR     mel01dev01.hoppetosse.loc.
+52       IN      PTR     mel0deploy01.hoppetosse.loc.
+53       IN      PTR     mel01puppet01.hoppetosse.loc.
+54       IN      PTR     mel01mon01.hoppetosse.loc.
+55       IN      PTR     mel01deploy01.hoppetosse.loc.
+56       IN      PTR     mel01tstsalt01.hoppetosse.loc.
+57       IN      PTR     mel01deploy03.hoppetosse.loc.
+58       IN      PTR     mel01misc01.hoppetosse.loc.
+
+; Workstations
+
+60       IN      PTR     tux.hoppetosse.loc.
+61       IN      PTR     m01n039.hoppetosse.loc.
+62       IN      PTR     m01n039-wifi.hoppetosse.loc.
+
+; pop     IN      CNAME   sid
+; www     IN      CNAME   sid
+; mail    IN      CNAME   sid
